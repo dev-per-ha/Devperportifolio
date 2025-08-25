@@ -67,7 +67,7 @@ export default function Hero() {
         {/* Circle container with gradient border */}
         <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full p-1 bg-gradient-to-tr from-blue-500 to-green-500 shadow-2xl">
           <img
-            src="./3.jpg"   // use your actual image (with background)
+            src="./3.JPG"   // use your actual image (with background)
             alt="Hero"
             className="w-full h-full object-cover rounded-full border-4 border-white shadow-lg"
           />
