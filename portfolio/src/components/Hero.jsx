@@ -42,7 +42,7 @@ export default function Hero() {
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           {/* Resume Download Button */}
           <a
-            href="/resume.pdf"
+            href="/last_cv.pdf"
             download="Dawit_HMariam_Resume.pdf"
             className="px-6 py-3 rounded-xl bg-blue-600 text-white shadow-lg hover:shadow-xl hover:bg-blue-700 transition"
           >
