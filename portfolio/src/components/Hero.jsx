@@ -40,12 +40,15 @@ export default function Hero() {
 
         {/* Call-to-Action buttons */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          {/* Resume Download Button */}
           <a
-            href="#projects"
+            href="/resume.pdf"
+            download="Dawit_HMariam_Resume.pdf"
             className="px-6 py-3 rounded-xl bg-blue-600 text-white shadow-lg hover:shadow-xl hover:bg-blue-700 transition"
           >
-            View Projects
+            Resume
           </a>
+
           <a
             href="#contact"
             className="px-6 py-3 rounded-xl bg-green-600 text-white shadow-lg hover:shadow-xl hover:bg-green-700 transition"
@@ -56,8 +59,6 @@ export default function Hero() {
       </motion.div>
 
       {/* Right Side - Image */}
-           {/* Right Side - Image */}
-           {/* Right Side - Image */}
       <motion.div
         className="flex-1 flex justify-center mt-10 md:mt-0 relative z-10"
         initial={{ x: 200, opacity: 0 }}
@@ -67,14 +68,12 @@ export default function Hero() {
         {/* Circle container with gradient border */}
         <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full p-1 bg-gradient-to-tr from-blue-500 to-green-500 shadow-2xl">
           <img
-            src="./3.JPG"   // use your actual image (with background)
+            src="./3.JPG"
             alt="Hero"
             className="w-full h-full object-cover rounded-full border-4 border-white shadow-lg"
           />
         </div>
       </motion.div>
-
-
     </section>
   );
 }
