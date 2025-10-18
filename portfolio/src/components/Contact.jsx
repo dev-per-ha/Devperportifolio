@@ -6,6 +6,7 @@ import {
   FaGithub,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6"; 
 import { HiOutlineMail } from "react-icons/hi";
 
 export default function Contact() {
@@ -67,6 +68,14 @@ export default function Contact() {
       bg: "bg-blue-300",
       hover: "hover:bg-blue-600 hover:text-white",
     },
+     { 
+    id: 8, 
+    icon: <FaTiktok />, 
+    text: "TikTok", 
+    link: "https://www.tiktok.com/@dev_per_?is_from_webapp=1&sender_device=pc", 
+    bg: "bg-black", 
+    hover: "hover:bg-yellow-500 hover:text-white" 
+  }
   ];
 
   return (
