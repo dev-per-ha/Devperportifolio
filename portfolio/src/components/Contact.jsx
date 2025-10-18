@@ -68,14 +68,15 @@ export default function Contact() {
       bg: "bg-blue-300",
       hover: "hover:bg-blue-600 hover:text-white",
     },
-    { 
+ { 
   id: 8, 
   icon: <FaTiktok className="text-white" />, 
   text: "TikTok", 
-  link: "https://www.tiktok.com/@yourusername", 
-  bg: "bg-black text-white", // ensures default text is white
-  hover: "hover:bg-yellow-500 hover:text-white" // hover keeps text white
+  link: "https://www.tiktok.com/@dev_per_", 
+  bg: "bg-black text-white",   // background black, default text white
+  hover: "hover:bg-yellow-500 hover:text-white" // hover background golden, text stays white
 }
+
 
   ];
 
