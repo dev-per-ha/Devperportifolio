@@ -24,7 +24,7 @@ export default function Hero() {
         transition={{ duration: 1, delay: 0.3 }}
       >
         <h1 className="text-5xl font-extrabold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent drop-shadow-lg mb-4">
-          Dawit H/mariam
+          Dawit H.mariam
         </h1>
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
           <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
