@@ -4,9 +4,30 @@ import { SiMongodb, SiTailwindcss, SiExpress } from "react-icons/si";
 
 
 export default function Works() {
-  const works = [
+  const works = [{
+  id: 1,
+  title: "FrejHotel Website",
+  description:
+    "A full-stack hotel management website with room booking functionality, customer appointment system, and an admin management panel for monitoring and control.",
+  images: [
+    "/my1.png",
+    "/my2.png",
+    "/my3.png",
+    "/my4.png",
+    "/my5.png",
+  ],
+  tech: [
+    { icon: <FaReact className="text-cyan-500" />, name: "React" },
+    { icon: <FaNodeJs className="text-green-600" />, name: "Node.js" },
+    { icon: <SiExpress className="text-gray-800" />, name: "Express.js" },
+    { icon: <SiTailwindcss className="text-sky-500" />, name: "Tailwindcss" },
+    { icon: <SiMongodb className="text-green-500" />, name: "MongoDB" },
+    { icon: <SiMinutemailer className="text-red-500" />, name: "Mailing" },
+  ],
+  link: "https://frejhotel.onrender.com"
+},
      {
-      id: 1,
+      id: 2,
       title: "Online Learning Platform",
       description:
         "A MERN stack online learning platform with user authentication, course management, and interactive quizzes.",
@@ -29,11 +50,11 @@ export default function Works() {
         { icon: <SiTailwindcss className="text-sky-500" />, name: "Tailwindcss" },
         { icon: <SiMongodb className="text-green-500" />, name: "MongoDB" },
       ],
-        link: "https://learnx-5rau.onrender.com"
+        link: "https://ferejhotel.com"
     },
    
     {
-      id: 2,
+      id: 3,
       title: "Hospital Appointment System",
       description: "A full-stack Doctor Appointment Booking System with user authentication, doctor approval, appointment scheduling, and MongoDB backend.  ",
           images: [
@@ -58,7 +79,7 @@ export default function Works() {
         link: "https://devperhospital.onrender.com/"
     },
     {
-      id: 3,
+      id: 4,
       title: "Hotel Management System",
       description:
         "A full-stack Hotel Management System with user and admin roles, secure authentication, room booking with simulated payment, and admin dashboards to manage bookings, customers, and rooms. Built using MERN stack (MongoDB, Express, React, Node.js).",
