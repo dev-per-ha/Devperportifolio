@@ -1,32 +1,26 @@
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaDatabase, FaHtml5, FaCss3Alt, FaJsSquare  ,} from "react-icons/fa";
-import { SiMongodb, SiTailwindcss, SiExpress } from "react-icons/si";
-
+import { FaReact, FaNodeJs, FaDatabase, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
+import { SiMongodb, SiTailwindcss, SiExpress, SiMinutemailer } from "react-icons/si";
 
 export default function Works() {
-  const works = [{
-  id: 1,
-  title: "FrejHotel Website",
-  description:
-    "A full-stack hotel management website with room booking functionality, customer appointment system, and an admin management panel for monitoring and control.",
-  images: [
-    "/my1.png",
-    "/my2.png",
-    "/my3.png",
-    "/my4.png",
-    "/my5.png",
-  ],
-  tech: [
-    { icon: <FaReact className="text-cyan-500" />, name: "React" },
-    { icon: <FaNodeJs className="text-green-600" />, name: "Node.js" },
-    { icon: <SiExpress className="text-gray-800" />, name: "Express.js" },
-    { icon: <SiTailwindcss className="text-sky-500" />, name: "Tailwindcss" },
-    { icon: <SiMongodb className="text-green-500" />, name: "MongoDB" },
-    { icon: <SiMinutemailer className="text-red-500" />, name: "Mailing" },
-  ],
-  link: "https://frejhotel.onrender.com"
-},
-     {
+  const works = [
+    {
+      id: 1,
+      title: "FrejHotel Website",
+      description:
+        "A full-stack hotel management website with room booking functionality, customer appointment system, and an admin management panel for monitoring and control.",
+      images: ["/my1.png", "/my2.png", "/my3.png", "/my4.png", "/my5.png"],
+      tech: [
+        { icon: <FaReact className="text-cyan-500" />, name: "React" },
+        { icon: <FaNodeJs className="text-green-600" />, name: "Node.js" },
+        { icon: <SiExpress className="text-gray-800" />, name: "Express.js" },
+        { icon: <SiTailwindcss className="text-sky-500" />, name: "Tailwindcss" },
+        { icon: <SiMongodb className="text-green-500" />, name: "MongoDB" },
+        { icon: <SiMinutemailer className="text-red-500" />, name: "Mailing" },
+      ],
+      link: "https://frejhotel.onrender.com",
+    },
+    {
       id: 2,
       title: "Online Learning Platform",
       description:
@@ -50,14 +44,14 @@ export default function Works() {
         { icon: <SiTailwindcss className="text-sky-500" />, name: "Tailwindcss" },
         { icon: <SiMongodb className="text-green-500" />, name: "MongoDB" },
       ],
-        link: "https://ferejhotel.com"
+      link: "https://ferejhotel.com",
     },
-   
     {
       id: 3,
       title: "Hospital Appointment System",
-      description: "A full-stack Doctor Appointment Booking System with user authentication, doctor approval, appointment scheduling, and MongoDB backend.  ",
-          images: [
+      description:
+        "A full-stack Doctor Appointment Booking System with user authentication, doctor approval, appointment scheduling, and MongoDB backend.",
+      images: [
         "/Screenshot (466).png",
         "/Screenshot (467).png",
         "/Screenshot (468).png",
@@ -66,17 +60,15 @@ export default function Works() {
         "/Screenshot (471).png",
         "/Screenshot (472).png",
         "/Screenshot (473).png",
-        
-       
       ],
       tech: [
         { icon: <FaReact className="text-cyan-500" />, name: "React" },
         { icon: <FaNodeJs className="text-green-600" />, name: "Node.js" },
         { icon: <SiExpress className="text-gray-800" />, name: "Express.js" },
-        {  icon: <FaCss3Alt className="text-blue-500" />, name: "CSS3" },
+        { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS3" },
         { icon: <SiMongodb className="text-green-500" />, name: "MongoDB" },
       ],
-        link: "https://devperhospital.onrender.com/"
+      link: "https://devperhospital.onrender.com/",
     },
     {
       id: 4,
@@ -92,17 +84,15 @@ export default function Works() {
         "/Screenshot (463).png",
         "/Screenshot (464).png",
         "/Screenshot (465).png",
-       
       ],
       tech: [
         { icon: <FaReact className="text-cyan-500" />, name: "React" },
         { icon: <FaNodeJs className="text-green-600" />, name: "Node.js" },
         { icon: <SiExpress className="text-gray-800" />, name: "Express.js" },
-        {  icon: <FaCss3Alt className="text-blue-500" />, name: "CSS3" },
+        { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS3" },
         { icon: <SiMongodb className="text-green-500" />, name: "MongoDB" },
       ],
-        link: "https://devperhotel.onrender.com"
-
+      link: "https://devperhotel.onrender.com",
     },
   ];
 
@@ -121,7 +111,7 @@ export default function Works() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.3 }}
           >
-            {/* Image carousel */}
+            {/* Image Carousel */}
             <div className="relative w-full h-64 overflow-hidden rounded-xl mb-4">
               {work.images.map((img, i) => (
                 <motion.img
@@ -130,7 +120,7 @@ export default function Works() {
                   alt={work.title}
                   className="absolute w-full h-full object-cover rounded-xl"
                   initial={{ opacity: 0 }}
-                  animate={{ opacity: [0, 1, 0] }} // fade in and out
+                  animate={{ opacity: [0, 1, 0] }}
                   transition={{ repeat: Infinity, duration: 6, delay: i * 2 }}
                 />
               ))}
@@ -141,20 +131,22 @@ export default function Works() {
             <p className="text-gray-600 italic mb-4">{work.description}</p>
 
             {/* Technologies */}
-          <div className="flex flex-col gap-3 mt-4">
-            {work.tech.map((techItem, i) => (
-              <div
-                key={i}
-                className="flex items-center gap-2 bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition"
-              >
-                {techItem.icon}
-                <span className="font-medium text-gray-700">{techItem.name}</span>
-              </div>
-            ))}
-          </div>
+            <div className="flex flex-col gap-3 mt-4">
+              {work.tech.map((techItem, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-2 bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition"
+                >
+                  {techItem.icon}
+                  <span className="font-medium text-gray-700">{techItem.name}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* Link Button */}
             <div className="mt-6">
               <a
-                href={work.link ? work.link : "#"} // replace "#" with your project link
+                href={work.link ? work.link : "#"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition"
@@ -167,11 +159,14 @@ export default function Works() {
                   strokeWidth="2"
                   viewBox="0 0 24 24"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  ></path>
                 </svg>
               </a>
             </div>
-
           </motion.div>
         ))}
       </div>
