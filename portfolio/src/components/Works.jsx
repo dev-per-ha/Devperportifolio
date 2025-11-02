@@ -6,7 +6,7 @@ export default function Works() {
   const works = [
     {
       id: 1,
-      title: "FrejHotel Website",
+      title: "FerejHotel Website",
       description:
         "A full-stack hotel management website with room booking functionality, customer appointment system, and an admin management panel for monitoring and control.",
       images: ["/my1.png", "/my2.png", "/my3.png", "/my4.png", "/my5.png"],
@@ -18,7 +18,7 @@ export default function Works() {
         { icon: <SiMongodb className="text-green-500" />, name: "MongoDB" },
         { icon: <SiMinutemailer className="text-red-500" />, name: "Mailing" },
       ],
-      link: "https://frejhotel.onrender.com",
+      link: "https://ferejhotel.com",
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ export default function Works() {
         { icon: <SiTailwindcss className="text-sky-500" />, name: "Tailwindcss" },
         { icon: <SiMongodb className="text-green-500" />, name: "MongoDB" },
       ],
-      link: "https://ferejhotel.com",
+      link: "https://learnx-5rau.onrender.com",
     },
     {
       id: 3,
